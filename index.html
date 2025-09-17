@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delta Yards</title>
+    <link rel="stylesheet" href="assets/style/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white   ">
+
+    <!-- navbar starts-->
+
+    <header id="siteHeader" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300 bg-transparent">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+            <a href="#" class="text-2xl font-bold text-white">
+                <img src="assets/img/logo-white2.svg" alt="logo" class="h-10">
+            </a>
+
+            <ul class="hidden md:flex space-x-8 text-white font-medium relative">
+                <li class="group relative">
+                    <button class="flex items-center hover:text-yellow-400">
+                        Home
+                        <svg class="ml-1 size-4 transform transition-transform duration-300 group-hover:rotate-180"
+                            fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </button>
+
+                    <div class="absolute left-1/2 top-full origin-top -translate-x-1/2
+                    w-[90vw] max-w-5xl bg-gray-100 shadow-xl p-6 rounded-lg
+                    transition-all duration-300 ease-out
+                    opacity-0 scale-y-0 
+                    group-hover:opacity-100 group-hover:scale-y-100 group-hover:pointer-events-auto
+                    max-h-[calc(100vh-64px)] overflow-y-auto">
+                        <div class="grid grid-cols-4 gap-4 bg-white p-2 mb-2">
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/index.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Luxury Duplex</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-2.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Real Estate Agency</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-3.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Commercial Real Estate</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-4.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Vacation Rental</p>
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-4 gap-4 p-2 mb-2">
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/index.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Luxury Duplex</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-2.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Real Estate Agency</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-3.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Commercial Real Estate</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-4.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Vacation Rental</p>
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-4 gap-4 p-2 mb-2">
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/index.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Luxury Duplex</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-2.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Real Estate Agency</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-3.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Commercial Real Estate</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-4.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Vacation Rental</p>
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-4 gap-4 p-2 mb-2">
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/index.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Luxury Duplex</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-2.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Real Estate Agency</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-3.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Commercial Real Estate</p>
+                            </a>
+                            <a href="#" class="block text-center">
+                                <img src="assets/img/pages/home-4.jpg" class="rounded mb-2" alt="">
+                                <p class="text-sm text-black">Vacation Rental</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#" class="hover:text-yellow-400">Property</a></li>
+                <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+
+            <a href="#"
+                class="hidden md:inline-block border border-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-black">
+                Contact Us
+            </a>
+
+            <button id="mobileBtn" class="md:hidden text-white text-3xl">&#9776;</button>
+        </nav>
+
+        <!-- mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden text-white text-center shadow px-4 pb-4">
+            <a href="#" class="block py-2 sm:border-b">Home</a>
+            <a href="#" class="block py-2 sm:border-b">Projects</a>
+            <a href="#" class="block py-2 sm:border-b">Property</a>
+            <a href="#" class="block py-2 sm:border-b">Contact</a>
+            <a href="#" class="block mt-2 bg-blue-700 text-white text-center py-2 rounded">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- navbar ends-->
+
+    <!-- carasoulre starts-->
+    <section class="relative w-full h-screen">
+        <div class="relative w-full h-full overflow-hidden">
+            <div id="slider" class="relative w-full h-full">
+                <!-- Slide 1 -->
+                <div class="absolute inset-0 transition-opacity duration-7  opacity-100">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center z-30">
+                        <div class="p-4 rounded-lg">
+                            <span id="typewriter"
+                                class="block text-white text-center type-cursor text-xl md:text-4xl font-bold mb-2">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <img src="assets/img/carousel/wel.jpg" class="w-full h-full object-cover zoom-anim"> -->
+                    <video width="320" height="240" class="w-full h-full object-cover "
+                        src="assets/img/carousel/ssvid.net--Home-Banner-Mobile-mp4_1080x1080.mp4" muted autoplay loop>
+                        <source src="assets/img/carousel/ssvid.net--Home-Banner-Mobile-mp4_1080x1080.mp4"
+                            type="video/mp4">
+                        <source src="assets/img/carousel/ssvid.net--Home-Banner-Mobile-mp4_1080x1080.mp4"
+                            type="video/ogg">
+                    </video>
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                <!-- Slide 2–5 -->
+                <div class="absolute inset-0 transition-opacity duration-700 opacity-0">
+                    <div class="absolute inset-y-0 left-0 flex flex-cols items-center z-30">
+                        <div class="ml-6 md:ml-16 p-4 rounded-lg">
+                            <span class="block text-white text-6xl md:text-8xl font-bold mb-2">Top Notch</span>
+                            <span class="block text-white text-6xl font-bold md:text-8xl mb-4">Living Space</span>
+                            <button
+                                class="px-6 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-700 transition">
+                                Explore Properties
+                            </button>
+                        </div>
+                    </div>
+                    <img src="assets/img/carousel/Airica.jpg" class="w-full h-full object-cover zoom-anim">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                <div class="absolute inset-0 transition-opacity duration-700 opacity-0">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center z-30">
+                        <div class="ml-6 md:ml-16 p-4 rounded-lg">
+                            <span class="block text-white text-center text-xl md:text-4xl font-bold mb-2">
+                                50+ Branded Partners
+                            </span>
+                            <span class="block text-white text-center text-xl md:text-xl">
+                                Delta Yards prides to work with 50+ established developers
+                            </span>
+                        </div>
+                    </div>
+                    <img src="assets/img/carousel/North Park Night View.jpg "
+                        class="w-full h-full object-cover zoom-anim">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                <div class="absolute inset-0 transition-opacity duration-700 opacity-0">
+                    <div class="absolute inset-y-0 left-0 flex flex-cols items-center z-30">
+                        <div class="ml-6 md:ml-16 p-4 rounded-lg">
+                            <span class="block text-white text-4xl md:text-6xl font-bold mb-2">Discover Your</span>
+                            <span class="block text-white text-4xl font-bold md:text-6xl mb-2">Flexible Living</span>
+                            <span class="block text-white text-4xl font-bold md:text-6xl mb-4">House</span>
+                            <button
+                                class="px-6 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-700 transition">
+                                Explore Properties
+                            </button>
+                        </div>
+                    </div>
+                    <img src="assets/img/carousel/Codename-LIT.jpg" class="w-full h-full object-cover zoom-anim">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                <div class="absolute inset-0 transition-opacity duration-700 opacity-0">
+                    <img src="assets/img/carousel/Ambrosia.jpg" class="w-full h-full object-cover zoom-anim">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                <div class="absolute inset-0 transition-opacity duration-700 opacity-0">
+                    <img src="assets/img/carousel/Veris.jpg" class="w-full h-full object-cover zoom-anim">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-40">
+                <button class="w-3 h-3 rounded-full bg-white/50" data-slide="0"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50" data-slide="1"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50" data-slide="2"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50" data-slide="3"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50" data-slide="4"></button>
+            </div>
+
+            <!-- Controls -->
+            <button id="prev"
+                class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-3 rounded-full z-40">&#10094;</button>
+            <button id="next"
+                class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-3 rounded-full z-40">&#10095;</button>
+        </div>
+    </section>
+    <!-- carasoulre end -->
+
+
+    <!-- about section starts -->
+
+    <!-- <section class="relative w-full bg-gray-50 py-12 px-4 md:px-12">
+        <div class="max-w-7xl mx-auto space-y-10">
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10">
+                    <div class="relative inline-block">
+                        <span
+                            class="absolute -top-6 left-2 text-4xl md:text-6xl font-extrabold text-gray-800/10 select-none tracking-wider">
+                            ABOUT
+                        </span>
+
+                        <h2 class="relative text-2xl md:text-3xl font-bold text-black">
+                            About Us
+                        </h2>
+
+                        <p class="relative font-semibold  mt-2 text-black max-w-xl">
+                            Our mission is to redefine the buying experience for our customers.
+                        </p>
+                    </div>
+                    <button
+                        class="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-tr-[15px] font-medium shadow ">
+                        Explore More
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <span class="block text-4xl md:text-5xl font-extrabold text-yellow-700">1000+</span>
+                        <p class="text-gray-700">Crores of Property<br>Transacted</p>
+                    </div>
+                    <div>
+                        <span class="block text-4xl md:text-5xl font-extrabold text-yellow-700">1M</span>
+                        <p class="text-gray-700">Over 1 Million SQ. FT<br>Property Sold</p>
+                    </div>
+                    <div>
+                        <span class="block text-4xl md:text-5xl font-extrabold text-yellow-700">100+</span>
+                        <p class="text-gray-700">Developer<br>Brand Partnerships</p>
+                    </div>
+                </div>
+
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 mt-5 gap-10 items-center">
+                    <div class="space-y-4 text-gray-700">
+                        <p class="text-lg font-semibold">
+                            We advise & help you buy your dream property—be it a home, office, or retail space.
+                        </p>
+                        <ul class="list-arrow list-inside space-y-2">
+                            <li class="flex flex-row items-center gap-2">
+                                <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                                <span>Choice of the best properties in the market</span>
+                            </li>
+                            <li class="flex flex-row items-center gap-2">
+                                <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                                <span>End-to-end buying advice</span>
+                            </li>
+                            <li class="flex flex-row items-center gap-2">
+                                <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                                <span>No charges from customers</span>
+                            </li>
+                            <li class="flex flex-row items-center gap-2">
+                                <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                                <span>Loan assistance & payment structuring advice</span>
+                            </li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="w-full h-full rounded-xl overflow-hidden shadow-lg">
+                        <iframe class="w-full h-full"
+                            src="https://www.youtube.com/embed/NGRsyxulkv0?si=Vxa5ie3ztipeEC0j"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+    <section
+        class="px-10 md:px-20 py-10 xl:mr-0 lg:mr-5 mr-0 bg-[url('assets/img/about-banner.png')]  bg-cover bg-center bg-fixed">
+        <div class="w-full max-w-7xl px md:px-5 lg:px-5 mx-auto transition-opacity opacity-100">
+            <div class="w-full  justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+                <div
+                    class="w-full rounded-xl flex-col p-5 bg-[#ffc03d] justify-center lg:items-start items-center gap-10 inline-flex">
+                    <div class="w-full flex-col justify-center items-start  gap-4 md:gap-8 flex">
+                        <div class="flex-col justify-start lg:items-start items-center gap-3 flex">
+                            <h6
+                                class="text-bold text-2xl md:text-4xl text-center md:text-left font-bold leading-relaxed oswald_span">
+                                Build Your Dream..</h6>
+                            <div class="w-full flex-col justify-start lg:items-start items-center gap-5 flex">
+                                <h2
+                                    class="text-black text-2xl  oswald_span  font-manrope leading-normal text-start text-center">
+                                    Engage with us for end to end property solutions. </h2>
+                                <p class="text-gray text-base font-normal  leading-relaxed lg:text-start  text-start">
+                                    Our achievement story is a testament to teamwork and perseverance. Together,
+                                    we've
+                                    overcome challenges, celebrated victories, and created a narrative of progress
+                                    and
+                                    success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="sm:w-fit w-full group px-3.5 py-2 bg-black hover:bg-white  rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex">
+                        <span
+                            class="px-1.5 text-white hover:text-black text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">Read
+                            More</span>
+                        <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="#4F46E5" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <section class="py-8 px-4 sm:py-12 sm:px-6 lg:px-12">
+                    <div class="max-w-5xl mx-auto">
+                        <!-- grid: 1 column on small, 2 columns on medium+, with gaps that grow on larger screens -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 text-left">
+
+                            <!-- Card 1 -->
+                            <div class="p-4 sm:p-6 rounded-xl bg-white border border-gray-200 
+                  hover:border-gray-400 transition duration-300 flex flex-col gap-2">
+                                <h4 class="text-gray-900 flex items-baseline gap-1 text-2xl sm:text-3xl font-bold">
+                                    <span class="counter" data-target="1000">0</span><span>+</span>
+                                </h4>
+                                <p class="text-gray-500 text-sm sm:text-base">
+                                    Crores of Property Transacted
+                                </p>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="p-4 sm:p-6 rounded-xl bg-white border border-gray-200 
+                  hover:border-gray-400 transition duration-300 flex flex-col gap-2">
+                                <h4 class="text-gray-900 flex items-baseline gap-1 text-2xl sm:text-3xl font-bold">
+                                    <span class="counter" data-target="1">0</span><span>M</span>
+                                </h4>
+                                <p class="text-gray-500 text-sm sm:text-base">
+                                    Over 1 Million SQ. FT of Property Sold
+                                </p>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="p-4 sm:p-6 rounded-xl bg-white border border-gray-200 
+                  hover:border-gray-400 transition duration-300 flex flex-col gap-2">
+                                <h4 class="text-gray-900 flex items-baseline gap-1 text-2xl sm:text-3xl font-bold">
+                                    <span class="counter" data-target="100">0</span><span>+</span>
+                                </h4>
+                                <p class="text-gray-500 text-sm sm:text-base">
+                                    Developer Brand Partnership
+                                </p>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="p-4 sm:p-6 rounded-xl bg-white border border-gray-200 
+                  hover:border-gray-400 transition duration-300 flex flex-col gap-2">
+                                <h4 class="text-gray-900 flex items-baseline gap-1 text-2xl sm:text-3xl font-bold">
+                                    <span class="counter" data-target="1520">0</span><span>+</span>
+                                </h4>
+                                <p class="text-gray-500 text-sm sm:text-base">
+                                    Colleagues & counting more daily
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section ends-->
+
+
+    <!-- caraousel starts -->
+    <section id="partnersSection" class="py-12 h-70 w-full  px-4 ">
+        <div id="partnersText" 
+            class=" max-w-4xl mx-auto text-center flex flex-col items-center justify-center transition-transform duration-300 ease-out translate-y-full opacity-0">
+            <h2 class="text-4xl text-black mb-2 oswald_span text-bold">Our Partners</h2>
+            <!-- <p id="partnersText" class="text-sky-600 mb-8 font-semibold translate-y-full opacity-0"> -->
+            <p id="partnersText" class="text-sky-600 mb-8 text-bold oswald_span">
+                We are pleased to work with our partners. </p>
+
+            <div id="logoTrack" class="overflow-hidden relative group cursor-grab w-full">
+                <div
+                    class="flex  items-center gap-8 overflow-hidden relative group">
+                    <div
+                        class="flex items-center gap-8 animate-[scroll_30s_linear_infinite] group-hover:[animation-play-state:paused] cursor-grab active:cursor-grabbing">
+                        <img src="assets/img/brands/1.jpeg"  class="h-16 w-auto object-contain" alt="Brand 1" />
+                        <img src="assets/img/brands/2.png" class="h-16 w-auto object-contain" alt="Brand 2" />
+                        <img src="assets/img/brands/3.png" class="h-16 w-auto object-contain" alt="Brand 3" />
+                        <img src="assets/img/brands/4.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/5.png" class="h-16 w-auto object-contain" alt="Brand 5" />
+                        <img src="assets/img/brands/6.png" class="h-16 w-auto object-contain" alt="Brand 1" />
+                        <img src="assets/img/brands/7.png" class="h-16 w-auto object-contain" alt="Brand 2" />
+                        <img src="assets/img/brands/8.png" class="h-16 w-auto object-contain" alt="Brand 3" />
+                        <img src="assets/img/brands/9.png" class="h-16 w-auto object-contain" alt="Brand 5" />
+                        <img src="assets/img/brands/10.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/11.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/12.jpeg" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/7.png" class="h-16 w-auto object-contain" alt="Brand 2" />
+                        <img src="assets/img/brands/8.png" class="h-16 w-auto object-contain" alt="Brand 3" />
+                        <img src="assets/img/brands/9.png" class="h-16 w-auto object-contain" alt="Brand 5" />
+                        <img src="assets/img/brands/10.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/11.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/12.jpeg" class="h-16 w-auto object-contain" alt="Brand 4" />
+
+
+                        <!-- duplicate set -->
+                        <img src="assets/img/brands/1.jpeg" class="h-16 w-auto object-contain" alt="Brand 1" />
+                        <img src="assets/img/brands/2.png" class="h-16 w-auto object-contain" alt="Brand 2" />
+                        <img src="assets/img/brands/3.png" class="h-16 w-auto object-contain" alt="Brand 3" />
+                        <img src="assets/img/brands/4.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/5.png" class="h-16 w-auto object-contain" alt="Brand 5" />
+                        <img src="assets/img/brands/6.png" class="h-16 w-auto object-contain" alt="Brand 1" />
+                        <img src="assets/img/brands/7.png" class="h-16 w-auto object-contain" alt="Brand 2" />
+                        <img src="assets/img/brands/8.png" class="h-16 w-auto object-contain" alt="Brand 3" />
+                        <img src="assets/img/brands/9.png" class="h-16 w-auto object-contain" alt="Brand 5" />
+                        <img src="assets/img/brands/10.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/11.png" class="h-16 w-auto object-contain" alt="Brand 4" />
+                        <img src="assets/img/brands/12.jpeg" class="h-16 w-auto object-contain" alt="Brand 4" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- caraousel ends -->
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
