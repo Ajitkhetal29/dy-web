@@ -122,17 +122,33 @@ document.addEventListener("DOMContentLoaded", () => {
 // }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const target = document.getElementById('partnersText');
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          target.classList.add('slide-up-fade');
-          obs.unobserve(entry.target); // run once
-        }
-      });
-    },
-    { threshold: 0.1 } 
-  );
-  observer.observe(target);
+    const target = document.getElementById('partnersText');
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    target.classList.add('slide-up-fade');
+                    obs.unobserve(entry.target); // run once
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );  
+    observer.observe(target);
 });
+
+
+// animation for property images
+
+const items = document.querySelectorAll(".fade-item");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+items.forEach((item) => observer.observe(item));

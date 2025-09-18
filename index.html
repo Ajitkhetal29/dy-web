@@ -30,6 +30,7 @@
                         </svg>
                     </button>
 
+
                     <div class="absolute left-1/2 top-full origin-top -translate-x-1/2
                     w-[90vw] max-w-5xl bg-gray-100 shadow-xl p-6 rounded-lg
                     transition-all duration-300 ease-out
@@ -337,9 +338,13 @@
     <section id="partnersSection" class="py-12 h-70 w-full  px-4 ">
         <div id="partnersText"
             class=" max-w-4xl mx-auto text-center flex flex-col items-center justify-center transition-transform duration-300 ease-out translate-y-full opacity-0">
-            <h2 class="text-4xl text-black mb-2 oswald_span text-bold">Our Partners</h2>
-            <!-- <p id="partnersText" class="text-sky-600 mb-8 font-semibold translate-y-full opacity-0"> -->
-            <p id="partnersText" class="text-sky-600 mb-8 text-bold oswald_span">
+            <div class="flex w-full flex-row items-center gap-2 justify-center ">
+                <div class="flex-grow max-w-40 border-t border-black"></div>
+                <h2 class="text-2xl text-black mb-2 oswald_span uppercase text-bold">Our Partners</h2>
+                <div class="flex-grow max-w-40 border-t border-black"></div>
+
+            </div>
+            <p id="partnersText" class="text-orange-600 mb-8 text-bold oswald_span">
                 We are pleased to work with our partners. </p>
 
             <div id="logoTrack" class="overflow-hidden relative group cursor-grab w-full">
@@ -392,60 +397,382 @@
     <!-- new launch section starts -->
 
     <div class="bg-gray-50">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <h2 class="sr-only text-black">Products</h2>
+        <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
+            <div class="flex justify-left items-center sm:justify-evenly xs:gap-1 px-6">
+                <h2 class="text-xl md:text-2xl flex-1 text-center text-black mb-2 uppercase oswald_span text-bold">
+                    Featured
+                    Projects</h2>
+                <button
+                    class="sm:w-fit  group md:px-3.5 py-2 border  hover:bg-black  transition-all duration-700 ease-in-out justify-center items-center flex">
+                    <span class="px-1.5 uppercase text-black hover:text-white text-sm font-medium leading-6">Explore
+                        All properties</span>
+                    <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="#4F46E5" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
 
-            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:grid-cols-3">
-                <a href="#" class="group hover:border hover:bg-gray-200 p-5">
+            <div class="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-4 ">
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
                     <img src="assets/img/new-launches/1.jpeg"
                         alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                        class="aspect-square w-full h-100 rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
-                    <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$48</p>   
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
                 </a>
-                <a href="#" class="group hover:border">
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
                     <img src="assets/img/new-launches/2.jpeg"
-                        alt="Olive drab green insulated bottle with flared screw lid and flat top."
-                        class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
-                    <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
                 </a>
-                <a href="#" class="group hover:border">
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
                     <img src="assets/img/new-launches/3.jpeg"
-                        alt="Person using a pen to cross a task off a productivity paper card."
-                        class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
-                    <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
                 </a>
-                <a href="#" class="group hover:border">
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
                     <img src="assets/img/new-launches/4.jpeg"
-                        alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                        class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
-                    <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
                 </a>
-                <a href="#" class="group hover:border">
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
                     <img src="assets/img/new-launches/5.jpeg"
-                        alt="Paper card sitting upright in walnut card holder on desk."
-                        class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
-                    <h3 class="mt-4 text-sm text-gray-700">Focus Card Tray</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$64</p>
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
                 </a>
-                <a href="#" class="group hover:border">
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
                     <img src="assets/img/new-launches/6.jpeg"
-                        alt="Stack of 3 small drab green cardboard paper card refill boxes with white text."
-                        class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
-                    <h3 class="mt-4 text-sm text-gray-700">Focus Multi-Pack</h3>
-                    <p class="mt-1 text-lg font-medium text-gray-900">$39</p>
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
                 </a>
-                
-                
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
+                    <img src="assets/img/new-launches/7.jpeg"
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="group  hover:border bg-white hover:bg-border p-5">
+                    <img src="assets/img/new-launches/8.jpeg"
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        class="aspect-square fade-item transition-all duration-700 ease-out w-full md:h-90 rounded-lg bg-gray-200 object-cover group-hover:opacity-75  overflow-hidden xl:aspect-7/8" />
+                    <p class="mt-3 text-xs text-gray-700 flex items-center "><span><img class="h-5 "
+                                src="assets/img/icons/location.png" alt=""></span> <span>BHAYANDAR WEST</span></p>
+                    <h2 class="mt-2 px-1 text-md font-medium maven-pro text-gray-900">Skyline Estate</h2>
+
+                    <div class="flex mt-2 item-center justify-between">
+                        <span class="flex px-1 mt-1 w-fit items-center border">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.332 7.999c0-3.68 2.98-6.667 6.66-6.667a6.67 6.67 0 0 1 6.673 6.667 6.67 6.67 0 0 1-6.673 6.666A6.663 6.663 0 0 1 1.332 8Zm6.667 2.3 2.146 1.293a.33.33 0 0 0 .494-.36l-.567-2.447 1.887-1.633a.334.334 0 0 0-.187-.587l-2.493-.213-.974-2.293a.332.332 0 0 0-.613 0l-.973 2.3-2.494.213a.337.337 0 0 0-.193.587l1.887 1.633-.567 2.44a.335.335 0 0 0 .5.36l2.147-1.293Z"
+                                    fill="#63BBEB"> </path>
+                            </svg>
+                            <span class="text-xs text-gray-700 ">NEW LAUNCH</span>
+
+                        </span>
+                        <img class="h-5 border rounded-full border-gray-300" src="assets/img/icons/arrow.png" alt="">
+                    </div>
+                </a>
             </div>
+
+            <div class="mt-10 flex justify-left items-center sm:justify-evenly xs:gap-1 px-6">
+                <button
+                    class="sm:w-fit  group md:px-3.5 py-2 border  hover:bg-black  transition-all duration-700 ease-in-out justify-center items-center flex">
+                    <span class="px-1.5 uppercase text-black hover:text-white text-sm font-medium leading-6">Explore
+                        All properties</span>
+
+                </button>
+            </div>
+
         </div>
     </div>
 
-
     <!-- new launch section ends -->
+
+
+    <!-- hero-2 -->
+
+    <section class="relative w-full bg-fixed bg-cover bg-center h-screen flex items-center"
+        style="background-image: url('/assets/img/hero-2.jpg')">
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div
+            class="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div class="text-white max-w-xl text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold gilda-display-regular mb-4 leading-tight">
+                    Transparent and participative culture
+                </h2>
+                <p class="mb-4 text-base md:text-lg maven-pro">
+                    is the bedrock of values at
+                </p>
+                <h3 class="text-2xl md:text-3xl gilda-display-regular font-semibold mb-4">
+                    Delta Yards
+                </h3>
+                <p class="mb-6 text-sm md:text-base maven-pro">
+                    In every deal we ensure a trusting, quality-driven and participative transaction.
+                </p>
+                <p class="font-medium gilda-display-regular">Delta Yards Pvt Ltd</p>
+            </div>
+
+            <div class="w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/jT6hFzQHkco?si=ZtKk3TQzH3HgAZG2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero-2 -->
+
+
+    <!-- testimonal section starts -->
+
+    <div
+        class=" relative  items-center [85rem] bg-[url('/assets/img/testimonal-bg.jpeg')] bg-cover  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="flex z-10 relative items-center justify-center w-full mb-10">
+            <div class="flex-grow max-w-40 border-t border-white"></div>
+            <h2 class="mx-4 text-2xl font-bold uppercase text-white oswald_span">
+                customers stories
+            </h2>
+            <div class="flex-grow flex-grow max-w-40 border-t border-white"></div>
+        </div>
+
+        <div class="relative  z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+            <div
+                class="flex flex-col bg-white/80 border border-gray-200 shadow-2xs rounded-tr-[50px] rounded-bl-[50px] ">
+                <div class="flex-auto p-4 md:p-6">
+                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
+                            " I'm absolutely floored by the level of care and attention to detail the team at HS have
+                            put into this theme and for one can guarantee that I will be a return customer. "
+                        </em></p>
+                </div>
+
+                <div class="p-4 rounded-b-xl md:px-6">
+                    <h3 class="text-sm font-semibold text-yellow-800 sm:text-base dark:text-neutral-200">
+                        Nicole Grazioso
+                    </h3>
+                    <p class="text-sm text-gray-500 dark:text-neutral-500">
+                        Director Payments & Risk | HubSpot
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col bg-white/80 border border-gray-200 shadow-2xs rounded-tr-[50px] rounded-bl-[50px]">
+                <div class="flex-auto p-4 md:p-6">
+                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
+                            " With Preline, we're able to easily track our performance in full detail. It's become an
+                            essential tool for us to grow and engage with our audience. "
+                        </em></p>
+                </div>
+
+                <div class="p-4 rounded-b-xl md:px-6">
+                    <h3 class="text-sm font-semibold text-yellow-800 sm:text-base dark:text-neutral-200">
+                        Josh Tyson
+                    </h3>
+                    <p class="text-sm text-gray-500 dark:text-neutral-500">
+                        Product Manager | Capsule
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col bg-white/80 border border-gray-200 shadow-2xs rounded-tr-[50px] rounded-bl-[50px]">
+                <div class="flex-auto p-4 md:p-6">
+                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
+                            " In September, I will be using this theme for 2 years. I went through multiple updates and
+                            changes and I'm very glad to see the consistency and effort made by the team. "
+                        </em></p>
+                </div>
+
+                <div class="p-4 rounded-b-xl md:px-6">
+                    <h3 class="text-sm font-semibold text-yellow-800 sm:text-base dark:text-neutral-200">
+                        Luisa
+                    </h3>
+                    <p class="text-sm text-gray-500 dark:text-neutral-500">
+                        Senior Director of Operations | Fitbit
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- testimonal section ends -->
+
+
+    <!-- photo gallery start -->
+
+    <section class="relative bg-gray-100  w-full flex items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class=" grid gap-4">
+            <div class="grid grid-cols-3 gap-4">
+                <div><img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                </div>
+                <div><img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                </div>
+                <div><img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+                <div><img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                </div>
+                <div><img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid grid-cols-5 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- photo gallery end -->
 
 
 
