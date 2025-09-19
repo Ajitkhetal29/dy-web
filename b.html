@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Delta Yards</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* small helper: fallback aspect-ratio for browsers that support it */
+    .ratio-4-3 { aspect-ratio: 4 / 3; }
+    .ratio-3-4 { aspect-ratio: 3 / 4; }
+    .ratio-16-9 { aspect-ratio: 16 / 9; }
+    /* overlay show/hide */
+    .card-overlay {
+      background: rgb(0 0 0 / 0.6);
+      transition: opacity .28s ease, transform .28s ease;
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    .card:hover .card-overlay,
+    .card:focus-within .card-overlay,
+    .card.group-hover .card-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Gallery Section -->
+  <section class="relative bg-gray-100 w-full flex flex-col items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <!-- heading with lines -->
+    <div class="flex items-center justify-center w-full mb-10">
+      <div class="flex-grow max-w-40 border-t border-gray-300"></div>
+      <h2 class="mx-4 text-2xl md:text-4xl font-bold uppercase text-black tracking-wider">Gallery</h2>
+      <div class="flex-grow max-w-40 border-t border-gray-300"></div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto space-y-6">
+      <!-- Row 1: 4 columns on lg, 2 on md, 1 on mobile -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Card A -->
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm focus:outline-none">
+          <div class="ratio-4-3 w-full">
+            <img loading="lazy" src="assets/img/projects/anandam.png"
+                 alt="Anandam Estate" class="w-full h-full object-cover block" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="flex items-center gap-2 text-[10px] sm:text-xs md:text-sm text-white">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span class="font-medium">BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-white">Anandam Estate</h3>
+          </div>
+        </a>
+
+        <!-- Card B -->
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-4-3 w-full">
+            <img loading="lazy" src="assets/img/projects/euphoria.png" alt="Euphoria Estate" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR EAST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Euphoria Estate</h3>
+          </div>
+        </a>
+
+        <!-- Card C -->
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-4-3 w-full">
+            <img loading="lazy" src="assets/img/projects/mukundam.png" alt="Mukundam Estate" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Mukundam Estate</h3>
+          </div>
+        </a>
+
+        <!-- Card D -->
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-4-3 w-full">
+            <img loading="lazy" src="assets/img/projects/sneham.png" alt="Sneham Estate" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Sneham Estate</h3>
+          </div>
+        </a>
+      </div>
+
+      <!-- Row 2: 3 columns on md, 1 on mobile -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-16-9 w-full">
+            <img loading="lazy" src="assets/img/projects/tirupati complex.png" alt="Tirupati Complex" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Tirupati Complex</h3>
+          </div>
+        </a>
+
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-16-9 w-full">
+            <img loading="lazy" src="assets/img/projects/sky heights.png" alt="Sky Heights" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>MIRA ROAD</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Sky Heights</h3>
+          </div>
+        </a>
+
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-16-9 w-full">
+            <img loading="lazy" src="assets/img/projects/sky avenue.png" alt="Sky Avenue" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR EAST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Sky Avenue</h3>
+          </div>
+        </a>
+      </div>
+
+      <!-- Row 3: 5 items on xl, 3 on lg, 2 on md, 1 on mobile -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-3-4 w-full">
+            <img loading="lazy" src="assets/img/projects/anjani one.png" alt="Anjani One" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR EAST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Anjani One</h3>
+          </div>
+        </a>
+
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-3-4 w-full">
+            <img loading="lazy" src="assets/img/projects/skyline.png" alt="Skyline" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Skyline</h3>
+          </div>
+        </a>
+
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-3-4 w-full">
+            <img loading="lazy" src="assets/img/projects/pentagon.png" alt="Pentagon Estate" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR EAST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Pentagon Estate</h3>
+          </div>
+        </a>
+
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-3-4 w-full">
+            <img loading="lazy" src="assets/img/projects/mukundam.png" alt="Mukundam Estate" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Mukundam Estate</h3>
+          </div>
+        </a>
+
+        <a href="#" class="card relative block rounded-lg overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div class="ratio-3-4 w-full">
+            <img loading="lazy" src="assets/img/projects/meadows.png" alt="Meadows Estate" class="w-full h-full object-cover" />
+          </div>
+          <div class="card-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-3">
+            <p class="text-[10px] sm:text-xs md:text-sm text-white flex items-center gap-2">
+              <img src="assets/img/icons/location.png" alt="" class="h-4 w-4" />
+              <span>BHAYANDAR WEST</span>
+            </p>
+            <h3 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Meadows Estate</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional small script to add keyboard focus styles for accessibility -->
+  <script>
+    // if keyboard user tabs into a card, add a visible focus style (useful for accessibility)
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('focus', () => card.classList.add('ring-2','ring-offset-2','ring-indigo-300'));
+      card.addEventListener('blur',  () => card.classList.remove('ring-2','ring-offset-2','ring-indigo-300'));
+    });
+  </script>
+</body>
+</html>
